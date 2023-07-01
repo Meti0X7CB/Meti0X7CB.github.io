@@ -1,1 +1,1 @@
-Personal project page and other stuff using basic html and css
+Personal projects page using basic HTML and CSS.
