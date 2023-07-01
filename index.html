@@ -1,49 +1,108 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 
 <head>
 	<title>Meti0X7CB</title>
-	<style type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+	<style>
 		body {
-			margin: 0;
-			background-color: #35363a;
+			font-family: 'Press Start 2P', sans-serif;
+			font-size: 22px;
+			background-color: #1a1c20;
 			display: flex;
+			flex-direction: column;
 			align-items: center;
 			justify-content: center;
 			text-align: center;
-			align-content: center;
-			flex-wrap: nowrap;
-			flex-direction: column;
-
-		}
-
-		a:link,
-		a:visited {
-			background-color: #3c4043;
 			color: #ffffff;
-			padding: 14px 25px;
-			text-align: center;
-			justify-content: center;
-			text-decoration: none;
-			display: flex;
-			align-items: center;
-			align-content: center;
-			flex-direction: column;
-			flex-wrap: nowrap;
+			margin: 0;
+			padding: 20px;
 		}
 
-		a:hover,
-		a:active {
-			background-color: #26272a;
+		h1 {
+			color: #ffffff;
+			margin-bottom: 20px;
+		}
+
+		h3 {
+			font-size: 24px;
+			font-weight: bold;
+			color: #cc3344;
+			margin-bottom: 10px;
+		}
+
+		p {
+			max-width: 400px;
+			font-size: 20px;
+			color: #ffffff;
+			margin-top: 0;
+		}
+
+		.project-list {
+			list-style: none;
+			padding: 0;
+			margin: 20px;
+		}
+
+		.project-item {
+			background-color: #262a30;
+			padding: 20px;
+			border-radius: 8px;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+			margin-bottom: 20px;
+			cursor: pointer;
+			position: relative;
+			overflow: hidden;
+			transition: background-color 0.3s ease;
+		}
+
+		.project-item:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #000000;
+			opacity: 0;
+			z-index: 1;
+			transition: opacity 0.3s ease;
+		}
+
+		.project-item:hover {
+			background-color: #1e2229;
+		}
+
+		.project-item:hover:before {
+			opacity: 0.5;
+		}
+
+		.project-item:hover h3,
+		.project-item:hover p {
+			transform: translateY(-10px);
+		}
+
+		.project-item h3,
+		.project-item p {
+			transition: transform 0.3s ease;
 		}
 	</style>
 </head>
 
 <body>
-	<div>
-		<p>WIP</p>
-		<a href="https://twitter.com/Meti0X7CB" target="_blank">Twitter</a>
-	</div>
+	<h1>Meti0X7CB Projects</h1>
+	<ul class="project-list">
+		<li class="project-item"
+			onclick="window.open('https://www.deviantart.com/mehdieft95/art/CoolWebPlayer-1-2-846095708', '_blank');">
+			<h3>CoolWebPlayer</h3>
+			<p>A cool controller for all your online music.</p>
+		</li>
+		<li class="project-item"
+			onclick="window.open('https://www.deviantart.com/mehdieft95/art/EQClock-3-1-682079811', '_blank');">
+			<h3>EQClock</h3>
+			<p>An analog clock skin with an equalizer</p>
+		</li>
+	</ul>
 </body>
 
 </html>
