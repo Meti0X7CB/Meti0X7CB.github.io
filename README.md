@@ -1,2 +1,2 @@
 # Meti0X7CB.github.io
-Testing GitHub Pages.
+Public personal project page and other stuff.
