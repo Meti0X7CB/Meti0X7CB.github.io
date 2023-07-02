@@ -1,1 +1,1 @@
-Personal projects page using basic HTML and CSS.
+Personal projects site built using [GitHub Pages](https://pages.github.com/).
